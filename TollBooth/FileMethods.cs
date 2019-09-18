@@ -60,6 +60,8 @@ namespace TollBooth
                         // TODO 7: Asyncronously upload the blob from the memory stream.
                         var uriBase = Environment.GetEnvironmentVariable("computerVisionApiUrl");
                         var apiKey = Environment.GetEnvironmentVariable("computerVisionApiKey");
+                        await blob.UploadFromStreamAsync(stream);
+
                         // COMPLETE: await blob...;
 
                         successful = true;
